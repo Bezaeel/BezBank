@@ -1,12 +1,7 @@
 const mongoose = require('mongoose');
 
 const CustomerSchema = mongoose.Schema({
-    CustomerID:{
-        type: Schema.Types.ObjectId,
-        unique: true,
-        required: true
-    }
-    , Email:{
+    Email:{
         type: String,
         unique: true,
         required: true
@@ -16,12 +11,7 @@ const CustomerSchema = mongoose.Schema({
         required: true
     }
     , Account:[{
-        ID:{
-            type: Schema.Types.ObjectId,
-            unique: true,
-            required: true
-        }
-        , AccountNumber:{
+        AccountNumber:{
             type: String,
             unique: true,
             required: true

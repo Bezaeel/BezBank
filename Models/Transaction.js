@@ -1,11 +1,7 @@
 const mongoose = require('mongoose');
 
 const TransactionSchema = mongoose.Schema({
-    TransactionID:{
-        type: Schema.Types.ObjectId,
-        unique: true
-    }
-    , CustomerID:{
+   CustomerID:{
         type: String,
         required: true
     }

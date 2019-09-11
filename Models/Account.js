@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 const AccountSchema = mongoose.Schema({
     ID:{
-        type: Schema.Types.ObjectId,
         unique: true,
         required: true
     }

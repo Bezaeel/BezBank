@@ -6,8 +6,10 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 const TransactionRoutes = require('./Contollers/TransactionControllers');
+const CustomerRoutes = require('./Contollers/CustomerControllers');
 
-app.use('/transactions', TransactionRoutes);
+app.use('/api/transactions', TransactionRoutes);
+app.use('/api/customers', CustomerRoutes);
 
 app.get('/', (req,res) => {
     res.send("Welcome");
