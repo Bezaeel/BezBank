@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const chalk = require('chalk');
+const figlet = require('figlet');
 
 
 app.use(bodyParser.json());
@@ -16,5 +18,6 @@ app.get('/', (req,res) => {
 });
 
 app.listen(3000, () =>{
-    console.log("server started...");
+    console.log(
+        chalk.green(figlet.textSync("server started...", {horizontalLayout:"full"})));
 });
